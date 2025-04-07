@@ -1,0 +1,37 @@
+body {
+    background-color: #fff
+
+
+    !important;
+}
+
+.logo1 {
+    background-color: #F1E6FB;
+}
+
+.lxy {
+    color: #8263a3 !important;              
+    font-size: 25px;                             
+    font-weight: bold;                           
+    text-shadow: 0 0 5px gold, 0 0 5px gold, 0 0 5px gold, 0 0 5px gold;             
+    border: none;                              
+    padding: 10px 20px;                       
+    cursor: pointer;        
+    border-radius: 12px; 
+}
+
+.add-cart {
+    background-color: #8263a3 !important; 
+    margin-right: 5px;
+    margin-bottom: 5px; 
+    border: 2px solid rgba(138, 43, 226, 0.8); 
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);  
+}
+
+.product-title {
+    margin-left: 5px;
+}
+
+.price {
+    margin-left: 5px;
+}

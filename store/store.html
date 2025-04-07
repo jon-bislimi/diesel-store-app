@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="store.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TpERaFwP1F9AuvYcl1G8KVUdunSeJpXrBqvF7lz2zFjQsP5wG5LT5e92vObD9BrC1" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <a href="/index.html" class="logo">Diesel</a>
+        <div id="cart-icon">
+            <i class="ri-shopping-bag-line"></i>
+            <span class="cart-item-count"></span>
+        </div>
+    </header>
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="/img/13656933_fpx.webp" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">T-Shirt</h2>
+                    <span class="cart-price">$65</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+            <button class="btn-buy">Buy now</button>
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    <section class="shop">
+        <h1 class="section-title">Clothing</h1>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/13656933_fpx.webp">
+                </div>
+                <h2 class="product-title">T-Shirt</h2>
+                <div class="price-and-cart">
+                    <span class="price">$65</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/14223747_fpx.webp">
+                </div>
+                <h2 class="product-title">Hoodie</h2>
+                <div class="price-and-cart">
+                    <span class="price">$80</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/6707597213-1.jpg">
+                </div>
+                <h2 class="product-title">Pink-Hoodie</h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/A03597_09C19_01_F.jpg">
+                </div>
+                <h2 class="product-title">Girl's Jeans</h2>
+                <div class="price-and-cart">
+                    <span class="price">$50</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/A03621_09K32_01_F.jpg">
+                </div>
+                <h2 class="product-title">Girl's Jeans</h2>
+                <div class="price-and-cart">
+                    <span class="price">$60</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/A14971_0NMAZ_44RA_F.jpg">
+                </div>
+                <h2 class="product-title">Sweatshirt</h2>
+                <div class="price-and-cart">
+                    <span class="price">$65</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/B62035.028_1.jpg">
+                </div>
+                <h2 class="product-title">Jeans</h2>
+                <div class="price-and-cart">
+                    <span class="price">$70</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/c4adfb43b42e7e23b728bdb92e8897a7.jpg">
+                </div>
+                <h2 class="product-title">Girl's Hoodie</h2>
+                <div class="price-and-cart">
+                    <span class="price">$78</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/diesel--Logo-embroidered-T-shirt.webp">
+                </div>
+                <h2 class="product-title">T-Shirt</h2>
+                <div class="price-and-cart">
+                    <span class="price">$60</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/diesel-blue-spender-distressed-skinny-jeans-product-1-998561648-normal.webp">
+                </div>
+                <h2 class="product-title">Jeans</h2>
+                <div class="price-and-cart">
+                    <span class="price">$80</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/diesel-Green-Regular-T-shirt-With-Logo-Applique.jpeg">
+                </div>
+                <h2 class="product-title">T-Shirt</h2>
+                <div class="price-and-cart">
+                    <span class="price">$79</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="/img/WEB_JS1249X_INDUSTRIAL-BLACK_F.webp">
+                </div>
+                <h2 class="product-title">Black Jeans</h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-bag-line add-cart"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        </section>
+
+        <section class="shop">
+            <h1 class="section-title" id="shoes-footwear">Shoes & Footwear</h1>
+            <div class="product-content">
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/71S75uG2ZML._AC_UL1500_.jpg">
+                    </div>
+                    <h2 class="product-title">Shoes</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$73</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/Y03188_P4440_H8985_B.webp">
+                    </div>
+                    <h2 class="product-title">Sandals</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$40</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/19836504_44514831_1000.webp">
+                    </div>
+                    <h2 class="product-title">Sandals</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$100</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/263730_2.jpg">
+                    </div>
+                    <h2 class="product-title">Sneakers</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$120</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/19836504_44514831_1000.webp">
+                    </div>
+                    <h2 class="product-title">Sandals</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$45</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/A82402.002_1.jpg">
+                    </div>
+                    <h2 class="product-title">Sneakers</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$134</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/diesel-Black-S-dese-Mid-Cut-W-High-top-Sneakers-In-Leather-And-Mesh.jpeg">
+                    </div>
+                    <h2 class="product-title">Sneakers</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$140</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/diesel-exposure-i-trainers.webp">
+                    </div>
+                    <h2 class="product-title">Girl's Sneakers</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$100</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/diesel-mayemi-slides.webp">
+                    </div>
+                    <h2 class="product-title">Sandals</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$39</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/file.png">
+                    </div>
+                    <h2 class="product-title">Shoes</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$150</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/OIP.jpg">
+                    </div>
+                    <h2 class="product-title">Sneakers</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$180</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+    
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="/img2/81aRHm+NaRL._AC_UX675_.jpg">
+                    </div>
+                    <h2 class="product-title">Girl's Sneakers</h2>
+                    <div class="price-and-cart">
+                        <span class="price">$100</span>
+                        <i class="ri-shopping-bag-line add-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            </section>
+
+        
+                <section class="shop">
+                    <h1 class="section-title" id="accessories">Accessories</h1>
+                    <div class="product-content">
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/1-38-eda017ce90687203_xxl.jpg">
+                            </div>
+                            <h2 class="product-title">Beanie Hat</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$65</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/30743519-ortho-2000x1125.webp">
+                            </div>
+                            <h2 class="product-title">Glasses</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$60</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/D87687.012_1.jpg">
+                            </div>
+                            <h2 class="product-title">Hat</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$40</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/diesel-blue-1dr-Metallic-Shoulder-Bag.webp">
+                            </div>
+                            <h2 class="product-title">Bag</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$70</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/diesel-DL0058S-05V-60_1_5.jpg">
+                            </div>
+                            <h2 class="product-title">Glasses</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$80</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/diesel-girls-pink-cotton-logo-cap-418169-3535c43e18826f912ca2f827b97e475013bb716d.jpg">
+                            </div>
+                            <h2 class="product-title">Hat</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$35</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/diesel-WHITE-1dr-Shoulder-Bag.jpeg">
+                            </div>
+                            <h2 class="product-title">Bag</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$70</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/diesel-WHITE-GREEN-BLACK-Appliqued-Baseball-Cap.webp">
+                            </div>
+                            <h2 class="product-title">Hat</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$50</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/OIP (1).jpg">
+                            </div>
+                            <h2 class="product-title">Glasses</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$90</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/OIP.jpg">
+                            </div>
+                            <h2 class="product-title">Glasses</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$80</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/X08353_P4445_T8013_C.jpg">
+                            </div>
+                            <h2 class="product-title">Bag</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$79</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+            
+                        <div class="product-box">
+                            <div class="img-box">
+                                <img src="/img3/X09922_P2809_T8013_R.webp">
+                            </div>
+                            <h2 class="product-title">Bag</h2>
+                            <div class="price-and-cart">
+                                <span class="price">$100</span>
+                                <i class="ri-shopping-bag-line add-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    </section>
+
+                    <section class="shop">
+                        <h1 class="section-title" id="fragrances">Fragrances</h1>
+                        <div class="product-content">
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/375x500.55037.jpg">
+                                </div>
+                                <h2 class="product-title">Parfume M</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$65</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/375x500.7542.jpg">
+                                </div>
+                                <h2 class="product-title">Parfume W</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$80</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/R.jpg">
+                                </div>
+                                <h2 class="product-title">Parfume W</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$100</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/5ede7fb2702a1-perfume-diesel-plus-plus-para-mujer-de-diesel-eau-de-toilette-75ml-1600x1600.jpg">
+                                </div>
+                                <h2 class="product-title">Parfume M</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$50</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/6e41a1203641e694b829b39deb78ce4b20329ebf_b703731e-2ea1-45a1-aadf-front.webp">
+                                </div>
+                                <h2 class="product-title">Parfume M</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$60</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/Diesel-Bad-Intense-50.webp">
+                                </div>
+                                <h2 class="product-title">Parfume M</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$65</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/diesel-d-red-eau-de-parfum-100-qh1vvc1ank8fiseuyq4q0g4lel5nss4i58i6ejaamg.jpg">
+                                </div>
+                                <h2 class="product-title">Parfume W</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$70</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/e6754aa6d7886b75c3b2002490ea207c.webp">
+                                </div>
+                                <h2 class="product-title">Parfume W</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$78</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/ef95fd6c-1330-4b45-bec8-b130f8aa782d.dd983b7599407ce40c7d942d505f57ea.webp">
+                                </div>
+                                <h2 class="product-title">Parfume M</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$60</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/F4525CB1C9CDC84A4ABDB5C1BA80DAF8_1_700x.webp">
+                                </div>
+                                <h2 class="product-title">Parfume W</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$80</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/OIP.jpg">
+                                </div>
+                                <h2 class="product-title">Parfume M</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$79</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                
+                            <div class="product-box">
+                                <div class="img-box">
+                                    <img src="/img4/PL0635_00PRO_01_E.webp">
+                                </div>
+                                <h2 class="product-title">Parfume M</h2>
+                                <div class="price-and-cart">
+                                    <span class="price">$100</span>
+                                    <i class="ri-shopping-bag-line add-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        </section>
+
+                        <body class="store-page">
+                            <footer class="bg-dark text-white text-center py-3">
+                                <p>We provide the best products for your needs. Quality and satisfaction guaranteed.</p>
+                                <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+                            </footer>
+                        </body>
+                                               
+                        
+                        
+
+    <script src="store.js"></script>
+</body>
+</html>
