@@ -23,18 +23,23 @@
 }
 
 button.explore {
-    color: var(--primary-color) !important;              
-    font-size: 25px;                             
-    font-weight: bold;                           
-    text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold, 0 0 20px gold; 
-    background-color: #2b2d34bd !important;              
-    border: none;                              
-    padding: 10px 20px;                       
-    cursor: pointer;        
-    border-radius: 12px;     
-  }
-  
-  
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #8263a3, 0 0 10px #8263a3, 0 0 15px #8263a3, 0 0 20px #8263a3;
+    background-color: #ffffff9e !important;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button.explore:hover {
+    background-color: #e0d5f3c3;
+    box-shadow: 0 0 10px #8263a3;
+    
+}
+
 
 a {
     text-decoration: none;

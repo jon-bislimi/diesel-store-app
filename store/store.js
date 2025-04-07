@@ -243,8 +243,8 @@
             purchasedItems.push(product);
         });
 
-        localStorage.setItem("purchasedProducts", JSON.stringify(purchasedItems));
         updateTotalPrice();
+        localStorage.setItem("purchasedProducts", JSON.stringify(purchasedItems));
 
         cartBoxes.forEach(cartBox => cartBox.remove());
         cartItemCount = 0;
