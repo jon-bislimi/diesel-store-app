@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let totalPrice = 0;
-
+    console.log(totalPrice)
     purchasedItems.forEach(item => {
 
-        const itemTotalPrice = parseFloat(item.price.replace('$', '')) * parseInt(item.quantity);
+        // const itemTotalPrice = parseFloat(item.price.replace('$', '')) * parseInt(item.quantity);
+        const itemTotalPrice = item.price;
 
         const itemElement = document.createElement("div");
         itemElement.classList.add("purchased-item");
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
         purchasedItemsContainer.appendChild(itemElement);
+        console.log(item)
 
         totalPrice += itemTotalPrice;
     });
@@ -42,11 +44,9 @@ window.onload = () => {
     if (user && user.email) {
         document.getElementById('username').textContent = user.email; // Ndrysho emrin në header
     }
-
-
 };
 
-// Logout funksion
+
 document.getElementById('lo').addEventListener('click', () => {
     const user = localStorage.getItem('user');
     if(!user) {
@@ -54,11 +54,11 @@ document.getElementById('lo').addEventListener('click', () => {
         return window.location.href = '/login/signup.html';
     };
 
-    localStorage.removeItem('user'); // Fshi përdoruesin nga localStorage
+    localStorage.removeItem('user');
     localStorage.removeItem('purchasedProducts');
     localStorage.removeItem('cartItems');
     localStorage.removeItem('cartItemCount');
     localStorage.removeItem('totalPrice');
-    window.location.href = '/login/signup.html'; // Ktheje përdoruesin në login
+    window.location.href = '/login/signup.html'; 
 });
 

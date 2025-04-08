@@ -232,19 +232,25 @@
             return;
         }
 
-        let purchasedItems = [];
+        let purchasedItems = JSON.parse(localStorage.getItem("purchasedProducts")) || [];
         cartBoxes.forEach(cartBox => {
             let product = {
                 title: cartBox.querySelector(".cart-product-title").innerText,
-                price: cartBox.querySelector(".cart-price").innerText,
+                price: parseFloat(cartBox.querySelector(".cart-price").innerText.replace(/[^0-9.]/g, '')),
                 image: cartBox.querySelector(".cart-img").src,
                 quantity: cartBox.querySelector(".number").innerText
             };
             purchasedItems.push(product);
         });
-
-        updateTotalPrice();
+        
+        if(discountInput.value.trim() === "JB") {
+            purchasedItems.forEach(product => {
+                product.price *= 0.65;
+            });
+        }
+        
         localStorage.setItem("purchasedProducts", JSON.stringify(purchasedItems));
+        updateTotalPrice();
 
         cartBoxes.forEach(cartBox => cartBox.remove());
         cartItemCount = 0;
