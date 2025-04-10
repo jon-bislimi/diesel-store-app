@@ -1,0 +1,243 @@
+[
+    {
+      "title": "T-Shirt",
+      "price": 65,
+      "image": "/img/13656933_fpx.webp"
+    },
+    {
+      "title": "Hoodie",
+      "price": 80,
+      "image": "/img/14223747_fpx.webp"
+    },
+    {
+      "title": "Pink-Hoodie",
+      "price": 100,
+      "image": "/img/6707597213-1.jpg"
+    },
+    {
+      "title": "Girl's Jeans",
+      "price": 50,
+      "image": "/img/A03597_09C19_01_F.jpg"
+    },
+    {
+      "title": "Girl's Jeans",
+      "price": 60,
+      "image": "/img/A03621_09K32_01_F.jpg"
+    },
+    {
+      "title": "Sweatshirt",
+      "price": 65,
+      "image": "/img/A14971_0NMAZ_44RA_F.jpg"
+    },
+    {
+      "title": "Jeans",
+      "price": 70,
+      "image": "/img/B62035.028_1.jpg"
+    },
+    {
+      "title": "Girl's Hoodie",
+      "price": 78,
+      "image": "/img/c4adfb43b42e7e23b728bdb92e8897a7.jpg"
+    },
+    {
+      "title": "T-Shirt",
+      "price": 60,
+      "image": "/img/diesel--Logo-embroidered-T-shirt.webp"
+    },
+    {
+      "title": "Jeans",
+      "price": 80,
+      "image": "/img/diesel-blue-spender-distressed-skinny-jeans-product-1-998561648-normal.webp"
+    },
+    {
+      "title": "T-Shirt",
+      "price": 79,
+      "image": "/img/diesel-Green-Regular-T-shirt-With-Logo-Applique.jpeg"
+    },
+    {
+      "title": "Black Jeans",
+      "price": 100,
+      "image": "/img/WEB_JS1249X_INDUSTRIAL-BLACK_F.webp"
+    },
+    {
+        "title": "Shoes",
+        "price": 73,
+        "image": "/img2/71S75uG2ZML._AC_UL1500_.jpg"
+      },
+      {
+        "title": "Sandals",
+        "price": 40,
+        "image": "/img2/Y03188_P4440_H8985_B.webp"
+      },
+      {
+        "title": "Sandals",
+        "price": 100,
+        "image": "/img2/19836504_44514831_1000.webp"
+      },
+      {
+        "title": "Sneakers",
+        "price": 120,
+        "image": "/img2/263730_2.jpg"
+      },
+      {
+        "title": "Sandals",
+        "price": 45,
+        "image": "/img2/19836504_44514831_1000.webp"
+      },
+      {
+        "title": "Sneakers",
+        "price": 134,
+        "image": "/img2/A82402.002_1.jpg"
+      },
+      {
+        "title": "Sneakers",
+        "price": 140,
+        "image": "/img2/diesel-Black-S-dese-Mid-Cut-W-High-top-Sneakers-In-Leather-And-Mesh.jpeg"
+      },
+      {
+        "title": "Girl's Sneakers",
+        "price": 100,
+        "image": "/img2/diesel-exposure-i-trainers.webp"
+      },
+      {
+        "title": "Sandals",
+        "price": 39,
+        "image": "/img2/diesel-mayemi-slides.webp"
+      },
+      {
+        "title": "Shoes",
+        "price": 150,
+        "image": "/img2/file.png"
+      },
+      {
+        "title": "Sneakers",
+        "price": 180,
+        "image": "/img2/OIP.jpg"
+      },
+      {
+        "title": "Girl's Sneakers",
+        "price": 100,
+        "image": "/img2/81aRHm+NaRL._AC_UX675_.jpg"
+      },
+        {
+            "title": "Beanie Hat",
+            "price": 65,
+            "image": "/img3/1-38-eda017ce90687203_xxl.jpg"
+        },
+        {
+            "title": "Glasses",
+            "price": 60,
+            "image": "/img3/30743519-ortho-2000x1125.webp"
+        },
+        {
+            "title": "Hat",
+            "price": 40,
+            "image": "/img3/D87687.012_1.jpg"
+        },
+        {
+            "title": "Bag",
+            "price": 70,
+            "image": "/img3/diesel-blue-1dr-Metallic-Shoulder-Bag.webp"
+        },
+        {
+            "title": "Glasses",
+            "price": 80,
+            "image": "/img3/diesel-DL0058S-05V-60_1_5.jpg"
+        },
+        {
+            "title": "Hat",
+            "price": 35,
+            "image": "/img3/diesel-girls-pink-cotton-logo-cap-418169-3535c43e18826f912ca2f827b97e475013bb716d.jpg"
+        },
+        {
+            "title": "Bag",
+            "price": 70,
+            "image": "/img3/diesel-WHITE-1dr-Shoulder-Bag.jpeg"
+        },
+        {
+            "title": "Hat",
+            "price": 50,
+            "image": "/img3/diesel-WHITE-GREEN-BLACK-Appliqued-Baseball-Cap.webp"
+        },
+        {
+            "title": "Glasses",
+            "price": 90,
+            "image": "/img3/OIP (1).jpg"
+        },
+        {
+            "title": "Glasses",
+            "price": 80,
+            "image": "/img3/OIP.jpg"
+        },
+        {
+            "title": "Bag",
+            "price": 79,
+            "image": "/img3/X08353_P4445_T8013_C.jpg"
+        },
+        {
+            "title": "Bag",
+            "price": 100,
+            "image": "/img3/X09922_P2809_T8013_R.webp"
+        },
+        {
+            "title": "Parfume M",
+            "price": 65,
+            "image": "/img4/375x500.55037.jpg"
+        },
+        {
+            "title": "Parfume W",
+            "price": 80,
+            "image": "/img4/375x500.7542.jpg"
+        },
+        {
+            "title": "Parfume W",
+            "price": 100,
+            "image": "/img4/R.jpg"
+        },
+        {
+            "title": "Parfume M",
+            "price": 50,
+            "image": "/img4/5ede7fb2702a1-perfume-diesel-plus-plus-para-mujer-de-diesel-eau-de-toilette-75ml-1600x1600.jpg"
+        },
+        {
+            "title": "Parfume M",
+            "price": 60,
+            "image": "/img4/6e41a1203641e694b829b39deb78ce4b20329ebf_b703731e-2ea1-45a1-aadf-front.webp"
+        },
+        {
+            "title": "Parfume M",
+            "price": 65,
+            "image": "/img4/Diesel-Bad-Intense-50.webp"
+        },
+        {
+            "title": "Parfume W",
+            "price": 70,
+            "image": "/img4/diesel-d-red-eau-de-parfum-100-qh1vvc1ank8fiseuyq4q0g4lel5nss4i58i6ejaamg.jpg"
+        },
+        {
+            "title": "Parfume W",
+            "price": 78,
+            "image": "/img4/e6754aa6d7886b75c3b2002490ea207c.webp"
+        },
+        {
+            "title": "Parfume M",
+            "price": 60,
+            "image": "/img4/ef95fd6c-1330-4b45-bec8-b130f8aa782d.dd983b7599407ce40c7d942d505f57ea.webp"
+        },
+        {
+            "title": "Parfume W",
+            "price": 80,
+            "image": "/img4/F4525CB1C9CDC84A4ABDB5C1BA80DAF8_1_700x.webp"
+        },
+        {
+            "title": "Parfume M",
+            "price": 79,
+            "image": "/img4/OIP.jpg"
+        },
+        {
+            "title": "Parfume M",
+            "price": 100,
+            "image": "/img4/PL0635_00PRO_01_E.webp"
+        }
+  ]
+  

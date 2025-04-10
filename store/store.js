@@ -263,3 +263,91 @@
     });
 
     discountInput.addEventListener("input", updateTotalPrice);
+
+    // FETCH dhe renderimi i produkteve
+    fetch('products.json')
+    .then(res => res.json())
+    .then(products => {
+      const shopContainer = document.getElementById('mainShop');
+  
+      const sections = [
+        { title: "Clothing", id: "clothing" },
+        { title: "Shoes & Footwear", id: "shoes-footwear" },
+        { title: "Accessories", id: "accessories" },
+        { title: "Fragrances", id: "fragrances" },
+      ];
+  
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
+        const sectionElement = document.createElement("section");
+        sectionElement.classList.add("shop");
+        sectionElement.innerHTML = `
+          <h1 class="section-title" id="${section.id}">${section.title}</h1>
+          <div class="product-content" id="productContainer${i}"></div>
+        `;
+        shopContainer.appendChild(sectionElement);
+  
+        const productsSlice = products.slice(i * 12, (i + 1) * 12);
+        const container = sectionElement.querySelector(`#productContainer${i}`);
+        productsSlice.forEach(p => {
+          const productBox = `
+            <div class="product-box">
+              <div class="img-box">
+                <img src="${p.image}" alt="${p.title}">
+              </div>
+              <h2 class="product-title">${p.title}</h2>
+              <div class="price-and-cart">
+                <span class="price">$${p.price}</span>
+                <i class="ri-shopping-bag-line add-cart"></i>
+              </div>
+            </div>
+          `;
+          container.innerHTML += productBox;
+        });
+      }
+  
+    // Vendos event listeners për butonat pasi produktet janë futur
+    const addCartButtons = document.querySelectorAll(".add-cart");
+    addCartButtons.forEach(button => {
+      button.addEventListener("click", event => {
+        const productBox = event.target.closest(".product-box");
+        addToCart(productBox);
+      });
+    });
+  });
+
+
+// Ky është jashtë fetch-it dhe është për butonin "Purchase"
+purchaseBtn.addEventListener("click", () => {
+    const cartBoxes = document.querySelectorAll(".cart-box");
+    const purchasedItems = [];
+
+    cartBoxes.forEach(cartBox => {
+        const product = {
+            title: cartBox.querySelector(".cart-product-title").textContent,
+            price: parseFloat(cartBox.querySelector(".cart-price").textContent.replace("$", "")),
+            quantity: parseInt(cartBox.querySelector(".cart-quantity").value),
+        };
+        purchasedItems.push(product);
+    });
+
+    if (discountInput.value.trim() === "JB") {
+        purchasedItems.forEach(product => {
+            product.price *= 0.65;
+        });
+    }
+
+    localStorage.setItem("purchasedProducts", JSON.stringify(purchasedItems));
+    updateTotalPrice();
+
+    cartBoxes.forEach(cartBox => cartBox.remove());
+    cartItemCount = 0;
+    updateCartCount(0);
+    updateTotalPrice();
+    saveCartToLocalStorage();
+    alert("Thank you for your purchase!");
+
+    window.location.href = "/profile/profile.html";
+});
+
+discountInput.addEventListener("input", updateTotalPrice);
