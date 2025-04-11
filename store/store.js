@@ -281,6 +281,7 @@
         const section = sections[i];
         const sectionElement = document.createElement("section");
         sectionElement.classList.add("shop");
+        sectionElement.id = section.id;
         sectionElement.innerHTML = `
           <h1 class="section-title" id="${section.id}">${section.title}</h1>
           <div class="product-content" id="productContainer${i}"></div>
@@ -315,7 +316,6 @@
       });
     });
   });
-
 
 // Ky është jashtë fetch-it dhe është për butonin "Purchase"
 purchaseBtn.addEventListener("click", () => {
