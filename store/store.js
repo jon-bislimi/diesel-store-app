@@ -4,6 +4,8 @@
     const cartContent = document.querySelector(".cart-content");
     const cartItemCountBadge = document.querySelector(".cart-item-count");
     const totalPriceElement = document.querySelector(".total-price");
+    
+
 
     const discountText = document.createElement("p");
     discountText.textContent = "Use code JB for a 35% bonus discount.";
@@ -306,6 +308,21 @@
           container.innerHTML += productBox;
         });
       }
+
+      document.getElementById('clothing-link').addEventListener('click', () => {
+        document.getElementById('clothing').scrollIntoView({ behavior: 'smooth' });
+      });
+      document.getElementById('shoes-footwear-link').addEventListener('click', () => {
+        document.getElementById('shoes-footwear').scrollIntoView({ behavior: 'smooth' });
+      });
+      document.getElementById('accessories-link').addEventListener('click', () => {
+        document.getElementById('accessories').scrollIntoView({ behavior: 'smooth' });
+      });
+      document.getElementById('fragrances-link').addEventListener('click', () => {
+        document.getElementById('fragrances').scrollIntoView({ behavior: 'smooth' });
+      });
+
+
   
     // Vendos event listeners për butonat pasi produktet janë futur
     const addCartButtons = document.querySelectorAll(".add-cart");
