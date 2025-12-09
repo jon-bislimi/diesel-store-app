@@ -1,5 +1,6 @@
 # My Project
 Diesel Store is a simple yet interactive e-commerce web app built with JavaScript, designed to provide a smooth user experience for browsing and purchasing diesel products.
+
 Features:
   User Authentication: Log in and register users using localStorage to save user data.
   Shopping Cart: Add products to the cart, view total items, and complete purchases.
