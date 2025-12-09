@@ -1,6 +1,6 @@
 # My Project
 
-This is a simple front-end project built with HTML, CSS, and JavaScript.
+This is a front-end project built with HTML, CSS, and JavaScript.
 
 ## 🚀 How to Run
 
