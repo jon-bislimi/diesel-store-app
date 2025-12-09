@@ -8,7 +8,7 @@ Features /
   Interactive Animations: Engaging animations for a modern and dynamic user interface,
   Responsive Design: Works well on desktop and mobile devices.
 
-Tech Stack:
+Tech Stack /
   JavaScript – Core functionality and logic
   HTML & CSS – Structure and styling
   LocalStorage – Persist user data and cart items
